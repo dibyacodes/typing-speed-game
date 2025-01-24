@@ -1,8 +1,7 @@
 # Typing Speed Test - TypeFlash
 
-[Visit this link to try out TypeFlash](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
 
-![TypeFlash](https://cdn-in.icons8.com/VQF3FNwVQ06hp_EFMfI78g/3ZGiaUF3sUiGDRfeNucg2A/typing_speed_game.png)
+![](https://cdn-in.icons8.com/VQF3FNwVQ06hp_EFMfI78g/3ZGiaUF3sUiGDRfeNucg2A/typing_speed_game.png)
 
 This is a simple yet a very insightful project for React + Typescript practice. It also includes dealing with API calls and fetching.
 
