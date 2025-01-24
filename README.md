@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Typing Speed Test - TypeFlash
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Visit this link to try out TypeFlash](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
 
-Currently, two official plugins are available:
+![TypeFlash](https://cdn-in.icons8.com/VQF3FNwVQ06hp_EFMfI78g/d2Of_D_NwUqzqn8QedPzMw/typing_speed_game.webp)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a simple yet a very insightful project for React + Typescript practice. It also includes dealing with API calls and fetching.
 
-## Expanding the ESLint configuration
+This project was built using React + TypeScript setup with vite using VScode. The process to set it up in your computer is given below.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Typeflash generate random words and tracks down your typing speed in WPM (Words Per Minute). The random words are generated from the following API
 
-- Configure the top-level `parserOptions` property like this:
+`https://random-word-api.herokuapp.com/word?number=100`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+#### The "100" in the end of the URL denotes that everytime the API is called it generated 100 Random words.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+TypeFlash is currently hosted in Github Page :
+
+- [Visit this link to try out TypeFlash](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
+
+![React-JS](https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=050) ![TypeScript](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/50px-Typescript_logo_2020.svg.png)
+
