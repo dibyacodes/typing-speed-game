@@ -10,7 +10,7 @@ function RemarkCard({ user_score, cpm_score, wpm_score }: metric) {
     let img_link = ""
 
     function Reload(){
-        window.location.reload()
+        window.location.reload()  // reloads the page
     }
 
     if (user_score <= 20) {

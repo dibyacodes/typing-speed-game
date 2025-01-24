@@ -1,9 +1,3 @@
-// TODO
-/*
-
-track down the WPM
-
-*/
 import { useCallback, useEffect, useRef, useState } from "react";
 import RandomWord from "./components/RandomWord";
 import RemarkCard from "./components/RemarkCard";
@@ -27,11 +21,9 @@ function App() {
 
   // the scoring system
   const scoring = () => {
-    console.log(str)
     if (str == random[randomIndex]) {
       setNumberOfChars(numOfChars + str.length)
       setScore(score + 1)
-      console.log(score)
     }
     return score
   }
@@ -72,7 +64,6 @@ function App() {
   useEffect(() => {
     async function fetchAPI() {
       const words = await (await API).json() // receives an array with 100 words
-      console.log(words)
       setRandomWord(words) // sends the array to the `random`
     }
 
@@ -83,7 +74,6 @@ function App() {
     }
   }, [startAPI, API])
 
-  // console.log(inputBox.current?.value)
   return (
     <div className="bg-[#151515] h-screen">
       {/* remarks card */}
@@ -103,6 +93,7 @@ function App() {
                 seconds
               </p>
             </div>
+
             {/* random words from the API */}
             <div className="max-w-fit flex">
               <div className="text-3xl w-full font-mono flex flex-wrap items-center max-w-fit gap-4">
@@ -134,7 +125,6 @@ function App() {
                   id="userInput"
                   placeholder="The timer will start once you start typing..."
                   onKeyDown={(e) => {
-                    // console.log(e.keyCode);
                     if (e.keyCode === 32) {
                       e.preventDefault()
                       setRandomWordIndex((prev) => prev + 1)
