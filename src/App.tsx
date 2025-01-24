@@ -138,10 +138,10 @@ function App() {
                     if (e.keyCode === 32) {
                       e.preventDefault()
                       setRandomWordIndex((prev) => prev + 1)
-                      str = e.target.value
+                      str = (e.target as HTMLInputElement).value;
+                      (e.target as HTMLInputElement).value = ''
                       scoring()
-                      e.target.value = ''
-
+                      
                       if (randomIndex >= 99) {
                         setRandomWordIndex(0)
                       }
