@@ -10,10 +10,10 @@ function App() {
   const [startAPI, setStartAPI] = useState(false) // initiates an API call
   const [randomIndex, setRandomWordIndex] = useState(0) // used to view the word from the `random` array
   const InputReference = useRef(null)
-  const [numOfChars, setNumberOfChars] = useState(0) // tracks down the number of character typed by the user
+  const [numOfChars, setNumberOfChars] = useState(50) // tracks down the number of character typed by the user
   const [hiddenInput, setInput] = useState(false)
-  const [score, setScore] = useState(0) // scoring
-  const [gameDisplay, setGameDisplay] = useState(false)
+  const [score, setScore] = useState(9) // scoring
+  const [gameDisplay, setGameDisplay] = useState(true)
   let str = '' // stores the word typed by the user (used in the scoring function)
   const [color, setColor] = useState("white")
   const WPM = numOfChars / (5 * 1)
