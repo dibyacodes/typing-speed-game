@@ -12,8 +12,8 @@ function App() {
   const InputReference = useRef(null)
   const [numOfChars, setNumberOfChars] = useState(0) // tracks down the number of character typed by the user
   const [hiddenInput, setInput] = useState(false)
-  const [score, setScore] = useState(79) // scoring
-  const [gameDisplay, setGameDisplay] = useState(true)
+  const [score, setScore] = useState(0) // scoring
+  const [gameDisplay, setGameDisplay] = useState(false)
   let str = '' // stores the word typed by the user (used in the scoring function)
   const [color, setColor] = useState("white")
   const WPM = numOfChars / (5 * 1)
