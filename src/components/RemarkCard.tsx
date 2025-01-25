@@ -19,25 +19,25 @@ function RemarkCard({ user_score, cpm_score, wpm_score }: metric) {
         window.location.reload()  // reloads the page
     }
 
-    if (user_score <= 20) {
+    if (wpm_score <= 20) {
         remarks = "You're A Tortoise"
         advice = "May be this is your first time or may be you should practice a little more!"
         img_link = "https://lcdn-in.icons8.com/c/5P9UQucmA0aHIlVmuzKc8g/b6a29804d8c9dfbfe1240abce4a2d8ec91aaa923.webp"
         twitterMessage = `Imma tortoise when it comes to the keyboard :) \n\nFind out your KEYBOARD ANIMAL in TypeFlash\n\n`
     }
-    else if (user_score <= 40) {
+    else if (wpm_score <= 40) {
         remarks = "You're A Panda"
         advice = "A little more focus and consistency will boost your speed!"
         img_link = "https://lcdn-in.icons8.com/c/5P9UQucmA0aHIlVmuzKc8g/50565c50f21deaae84d3a89652ba4445ec3b7b18.webp"
         twitterMessage = `Imma Panda when it comes to the keyboard :) \n\nFind out your KEYBOARD ANIMAL in TypeFlash\n\n`
     }
-    else if (user_score <= 80) {
+    else if (wpm_score <= 80) {
         remarks = "Dayumm! You're An Eagle"
         advice = "Just a few more practice sessions and you'll be blazing through documents!"
         img_link = "https://lcdn-in.icons8.com/c/5P9UQucmA0aHIlVmuzKc8g/cab89faef4086a3dd981a320dc114a027a4b551c.webp"
         twitterMessage = `Imma freakin Eagle when it comes to the keyboard :) \n\nFind out your KEYBOARD ANIMAL in TypeFlash\n\n`
     }
-    else if (user_score <= 100 || user_score >= 100) {
+    else if (wpm_score <= 100 || wpm_score >= 100) {
         remarks = "You're A Freaking Cheetah"
         advice = "You're not just typing; you're creating digital art at lightning speed!"
         img_link = "https://lcdn-in.icons8.com/c/5P9UQucmA0aHIlVmuzKc8g/88793d23a0fdb1eafe4967e406195e211bcd6374.webp"
