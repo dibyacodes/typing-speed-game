@@ -22,10 +22,10 @@ TypeFlash is currently hosted in Github Page :
 
 ## What's Your Keyboard Animal?
 <div style="display:flex; flex-wrap:wrap;">
-<img src="public/cheetah_remarks.png" style="width:20%; height:auto;">
-<img src="public/remarks_eagle.png" style="width:20%; height:auto;">
-<img src="public/remarks_panda.png" style="width:20%; height:auto;">
-<img src="public/remarks_tortoise.png" style="width:20%; height:auto;">
+<img src="public/cheetah_remarks.png" style="width:35%; height:auto;">
+<img src="public/remarks_eagle.png" style="width:35%; height:auto;">
+<img src="public/remarks_panda.png" style="width:35%; height:auto;">
+<img src="public/remarks_tortoise.png" style="width:35%; height:auto;">
 </div>
 
 ![React-JS](https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--company-brand-world-logos-vol-4-pack-icons-282599.png?f=webp&w=050) ![TypeScript](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/50px-Typescript_logo_2020.svg.png)
